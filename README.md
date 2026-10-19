@@ -15,6 +15,32 @@ Make sure to backup your d2 files somewhere else just for good measure in case s
 
 Now, stay a while, and listen! :)
 
+## Disclaimer
+
+D2RSPCP is an unofficial, fan-made, non-commercial tool. It is not affiliated
+with, endorsed by, sponsored by, or approved by Blizzard Entertainment, Inc.,
+Activision Blizzard, or Microsoft.
+
+Diablo, Diablo II, Diablo II: Resurrected, Blizzard, and related names, logos,
+and marks are trademarks or registered trademarks of Blizzard Entertainment,
+Inc. They are used here only to describe what this software works with. This
+project contains no Blizzard game files, code, or assets. It copies only the
+save files that you own on your own devices, between machines that you control.
+
+This project is intended for offline, single-player use only. Do not use it
+with online or Battle.net characters. You are responsible for making sure your
+use of this software complies with the Blizzard End User License Agreement,
+Terms of Use, and any other terms that apply to you.
+
+This software was written with the help of artificial intelligence and has had
+only limited testing. It is provided "AS IS", without warranty of any kind,
+express or implied, including but not limited to merchantability, fitness for
+a particular purpose, and non-infringement. In no event shall the authors or
+contributors be liable for any claim, damages, or other liability, including
+loss, corruption, or overwriting of save files or characters, arising from the
+use of this software. Always keep your own backups of your save files before
+using it.
+
 \\\\\\\\\\\\\\\\\\\\\\\ Below this line, everything was written by AI\\\\\\\\\\\\\\\\\\\\\\
 
 D2RSPCP (Diablo 2 Resurrected Single Player Cross Progression) lets you carry your single-player D2R characters between devices, for example a Windows PC and a Steam OS handheld, without copying files by hand.
