@@ -67,8 +67,6 @@ The server is a small Docker container that stores the current copy of your save
 Put these files in one folder on the server, for example `/home/YOURUSER/D2RSPCP/d2rspcp`:
 
 ```
-d2rspcp.py[CLIENT-SETUP.md](https://github.com/user-attachments/files/33689113/CLIENT-SETUP.md)
-
 Dockerfile
 docker-compose.yml
 README.md
