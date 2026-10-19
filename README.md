@@ -11,7 +11,9 @@ Everything you read below this introductory text, was written by AI (I want to b
 
 I want to keep this free and open source, and let people who understand more about programming than me to feel free to update it as they wish. It serves my purpose and I hope it can somehow serve yours.
 
-Now stay a while, and listen! :)
+Make sure to backup your d2 files somewhere else just for good measure in case something breaks.
+
+Now, stay a while, and listen! :)
 
 \\\\\\\\\\\\\\\\\\\\\\\ Below this line, everything was written by AI\\\\\\\\\\\\\\\\\\\\\\
 
