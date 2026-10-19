@@ -21,7 +21,7 @@ D2RSPCP (Diablo 2 Resurrected Single Player Cross Progression) lets you carry yo
 
 It has two parts. A small server runs in Docker on your own machine and keeps the current copy of your saves, plus older versions you can restore. A small client runs on each device you play on and keeps its local save folder in sync with the server. It syncs only the character files (.d2s, .ma0–.ma3, .map, .key, .ctl) and ignores everything else in the folder, such as online character data. When a file changes on one device, the others pick it up within seconds, as long as you quit the game before switching. The server also has a simple web page for adding, downloading and restoring files by hand.
 
-Made with AI: everything in this project, including the code, Docker setup, web page and documentation, was written by an AI assistant (Claude, made by Anthropic) in conversation with the project owner.
+Made with AI: everything in this project, including the code, Docker setup, web page and documentation, was written by an AI assistant in conversation with the project owner.
 
 Tests have been made using a Windows PC and a Legion Go running SteamOS.
 
