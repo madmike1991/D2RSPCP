@@ -46,6 +46,6 @@ Without Docker: `pip install fastapi uvicorn requests`, then
 - Only one side changed since the last sync → that side wins. Both changed → the newer file wins and the loser is backed up (server: `history/`, client: `/config/backups`).
 - Files modified in the last 5 seconds are skipped, and files are written atomically.
 - Nothing is ever deleted by the sync.
-- Synced by default: `.d2s .ma0 .ma1 .ma2 .ma3 .map .key .ctl` (flat files only, other files in the folder, e.g. online character data, are ignored). Change the list with `D2RSPCP_EXTENSIONS` (comma separated), e.g. `.d2s,.ma0,.ma1,.ma2,.ma3,.map,.key,.ctl,.d2i` to also sync the shared stash. Set it the same on server and clients.
+- Synced by default: `.d2s .ma0 .ma1 .ma2 .ma3 .map .key .ctl .d2i` (flat files only, other files in the folder, e.g. online character data, are ignored). Change the list with `D2RSPCP_EXTENSIONS` (comma separated), e.g. to add or remove file types. Set it the same on server and clients.
 
 **Tip:** close the game before switching PCs. D2R writes on save/exit, and the client only picks up the changes once the file settles.

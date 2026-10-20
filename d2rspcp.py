@@ -29,7 +29,7 @@ log = logging.getLogger("d2rspcp")
 # e.g. add ".d2i" to also sync the shared stash.
 ALLOWED_EXT = {
     (e.strip() if e.strip().startswith(".") else "." + e.strip()).lower()
-    for e in os.environ.get("D2RSPCP_EXTENSIONS", ".d2s,.ma0,.ma1,.ma2,.ma3,.map,.key,.ctl").split(",")
+    for e in os.environ.get("D2RSPCP_EXTENSIONS", ".d2s,.ma0,.ma1,.ma2,.ma3,.map,.key,.ctl,.d2i").split(",")
     if e.strip()
 }
 NAME_RE = re.compile(r"^[\w][\w .\-]{0,127}$")

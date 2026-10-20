@@ -12,7 +12,6 @@ services:
     environment:
       D2RSPCP_MODE: server
       D2RSPCP_TOKEN: ${D2RSPCP_TOKEN:?set a long random token in .env}
-      
     ports:
       - "8420:8420"
     volumes:
