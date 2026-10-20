@@ -1,0 +1,31 @@
+# Server (run on the machine that hosts it):   docker compose --profile server up -d
+# Client (run on each gaming PC):              docker compose --profile client up -d
+# Put your values in a .env file next to this one (see README).
+# Note: Compose reads variables for ALL services, even ones whose profile is off,
+# so the client-only variables have harmless defaults here. The client itself
+# refuses to start if they are missing.
+services:
+  d2rspcp-server:
+    profiles: ["server"]
+    build: .
+    restart: unless-stopped
+    environment:
+      D2RSPCP_MODE: server
+      D2RSPCP_TOKEN: ${D2RSPCP_TOKEN:?set a long random token in .env}
+    ports:
+      - "8420:8420"
+    volumes:
+      - ./d2rspcp-data:/data
+
+  d2rspcp-client:
+    profiles: ["client"]
+    build: .
+    restart: unless-stopped
+    environment:
+      D2RSPCP_MODE: client
+      D2RSPCP_TOKEN: ${D2RSPCP_TOKEN:-}
+      D2RSPCP_SERVER: ${D2RSPCP_SERVER:-}
+    volumes:
+      # Left side = where D2R keeps your saves on THIS machine. Right side stays /saves.
+      - ${D2R_SAVES_PATH:-./unset-saves-path}:/saves
+      - ./d2rspcp-config:/config
